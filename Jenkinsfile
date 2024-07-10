@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'your-username/podman:latest'  // Replace 'your-username' with your Docker Hub username
+            image 'thomasgh/podman:latest'  // Replace 'your-username' with your Docker Hub username
         }
     }
     stages {
