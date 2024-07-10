@@ -1,13 +1,11 @@
 pipeline {
     agent {
-        docker {
-            image 'thomasgh/podman:latest'  // Replace 'your-username' with your Docker Hub username
-        }
+        docker { image 'thomasgh:latest' }
     }
     stages {
         stage('Test') {
             steps {
-                sh 'echo "Hello, World!"'
+                sh 'node --version'
             }
         }
     }
