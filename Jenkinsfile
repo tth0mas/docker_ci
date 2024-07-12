@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        docker { image 'thomasgh:latest' }
+        docker { image 'thomasgh/podman:latest' }
     }
     stages {
         stage('Test') {
